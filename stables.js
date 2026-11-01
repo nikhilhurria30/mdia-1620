@@ -61,7 +61,6 @@ let stableName = "term1Stables"
 // console.log (`The name of my Stable is ${stableName}`)
 
 // horse1
-
 let horse1 = {
     name : Architt,
     age : 20,
@@ -70,11 +69,7 @@ let horse1 = {
     lateFee : horse1MonthlyCost *1.20
 }
 
-
-
 // horse2
-
-
 let horse2 = {
     name : Rahul,
     age : 21,
@@ -84,9 +79,6 @@ let horse2 = {
 }
 
 // horse3 
-
-
-
 let horse3 = {
     name : Daksh,
     age : 22,
