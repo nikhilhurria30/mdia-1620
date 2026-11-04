@@ -147,6 +147,7 @@ console.log(latePaymentMessage)
 
 let horses = [horse1,horse2,horse3];
 
+
 let horse4 = {
     name : "Nikhil",
     nickName : "Nick",
@@ -183,3 +184,4 @@ latePayment(horse1);
 function getNickName(horse) {
     return horse.nickName;
 }
+
