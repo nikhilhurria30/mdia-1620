@@ -111,7 +111,7 @@ let horse1 = {
     age : 20,
     monthlyRent : 100,
     lateFee : 100*1.20,
-    ishorse1inside : true,
+    isInside : true,
     color : "Brown",
     hobby : "Gym"
 };
@@ -124,7 +124,7 @@ let horse2 = {
     age : 21,
     monthlyRent : 200,
     lateFee : 200*1.20,
-    ishorse2inside : false,
+    isInside : false,
     color : "black",
     hobby : "cricket"
 };
@@ -137,7 +137,7 @@ let horse3 = {
     age : 22,
     monthlyRent : 300,
     lateFee : 300*1.20,
-    ishorse3inside : true,
+    isInside : true,
     color : "white",
     hobby : "Driving"
 };
@@ -155,25 +155,25 @@ let horse4 = {
     age : 21,
     monthlyRent : 400,
     lateFee : 400*1.20,
-    ishorse4inside : false,
+    isInside : false,
     color : "red",
     hobby : "Badminton"
 };
 
 horses.push(horse4);
 
-horse1.ishorse1hungry = true;
-horse2.ishorse2hungry = false;
-horse3.ishorse3hungry = true;
-horse4.ishorse4hungry = false;
+horse1.isHungry = true;
+horse2.isHungry = false;
+horse3.isHungry = true;
+horse4.isHungry = false;
 
 let totalNumberOfStalls = 10;
 
-function availableStalls() {
+function availableStalls(totalNumberOfStalls, horses) {
     let available = totalNumberOfStalls - horses.length;
     console.log(`Available Stalls = ${available}`)
 }
-availableStalls()
+availableStalls(10, 3);
 
 function latePayment(horse) {
     let amount = horse.lateFee;
